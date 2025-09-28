@@ -1,62 +1,32 @@
-# JAC (Jornada Acadêmica e Comunitária)
+# Entrega – Projeto JAC (Jornada Acadêmica e Comunitária)
 
-Plataforma para gestão de eventos acadêmicos e comunitários, com gamificação e sistema de reconhecimento de participação.
+**Data:** 28/09
+**Versão:** Primeira versão funcional (cadastro + recomendação básica + integração inicial com banco de dados)
 
-## Status do Projeto
+## 📦 Estrutura da Entrega no AVA
 
-📌 **28/09 – Primeira versão funcional**
+Devido à limitação da plataforma AVA, que permite apenas **dois arquivos**, a entrega foi organizada assim:
+
+* Um arquivo **.zip** principal.
+* Dentro dele, há **outro arquivo .zip**, contendo os códigos separados em **backend** e **frontend**.
+
+## 📂 Estrutura dos Códigos
+
+* **Backend**: desenvolvido em **Node.js** com suporte ao **Prisma ORM** e PostgreSQL.
+* **Frontend**: páginas em **HTML e CSS** estáticos (sem JavaScript até o momento).
+
+## 💻 Repositórios Provisórios no GitHub
+
+Além do envio em .zip, os códigos também foram disponibilizados em repositórios provisórios no GitHub para acompanhamento:
+
+* **Backend**: [jac-back-end-main](https://github.com/GBertonsin/jac-back-end)
+* **Frontend**: [jac-front-end-main](https://github.com/GabrielGFC/JAC-FRONT-END)
+
+🔜 *Na próxima semana será disponibilizado o repositório definitivo do projeto no GitHub, com a documentação centralizada e melhorias na organização.*
+
+## 📌 Status Atual da Primeira Versão
 
 * Cadastro de usuários
 * Recomendação básica de eventos
-* Integração inicial com banco de dados
-
-## Estrutura do Projeto
-
-### Backend
-
-* Repositório: [jac-back-end-main](https://github.com/GBertonsin/jac-back-end)
-* Stack: Node.js, Express, Sequelize, PostgreSQL
-* Funcionalidades atuais:
-
-  * Cadastro de usuário
-  * CRUD inicial de eventos
-  * Integração com banco de dados
-
-### Frontend
-
-* Repositório: [jac-front-end-main](https://github.com/GabrielGFC/JAC-FRONT-END)
-* Stack: React (Vite + TypeScript)
-* Funcionalidades atuais:
-
-  * Tela de login/cadastro
-  * Recomendação básica de eventos
-
-## Como rodar localmente
-
-### Pré-requisitos
-
-* Node.js >= 18
-* PostgreSQL rodando local ou via Docker
-
-### Backend
-
-```bash
-git clone https://github.com/GBertonsin/jac-back-end.git
-cd jac-back-end
-npm install
-npm run dev
-```
-
-### Frontend
-
-```bash
-git clone https://github.com/GabrielGFC/JAC-FRONT-END.git
-cd jac-front-end
-npm install
-npm run dev
-```
-
-A aplicação ficará disponível em:
-
-* **Backend**: [http://localhost:3000](http://localhost:3000)
-* **Frontend**: [http://localhost:5173](http://localhost:5173)
+* Integração inicial com banco de dados (PostgreSQL + Prisma)
+* Interface inicial em HTML e CSS
