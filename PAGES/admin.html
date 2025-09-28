@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa</title>
+    <link rel="stylesheet" href="/JAC - FRONTEND/styles/admin.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="header">
+            <div class="user-profile">
+                <span class="back-arrow" onclick="history.back()">
+                    <a href="perfil.html">←</a>
+                </span> 
+                </div>
+            <div class="notification-icon">🔔</div>
+        </header>
+
+        <main class="admin-main">
+            
+            <div class="admin-tab-navigation">
+                <button class="admin-tab-button active">Visão Geral</button>
+                <button class="admin-tab-button">
+                    <a href="perfil-evento.html">Eventos</a>
+                </button>
+                <button class="admin-tab-button">
+                    <a href="analytics.html"></a>Analytics
+                </button>
+            </div>
+
+            <section class="admin-stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">📅</span>
+                    <p class="stat-value">6</p>
+                    <p class="stat-label">Total de Eventos</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">👥</span>
+                    <p class="stat-value">350</p>
+                    <p class="stat-label">Participações</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🕒</span>
+                    <p class="stat-value">1</p>
+                    <p class="stat-label">Pendentes</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">📈</span>
+                    <p class="stat-value">75%</p>
+                    <p class="stat-label">Taxa de Aprovação</p>
+                </div>
+            </section>
+
+            <section class="admin-alert-card">
+                <span class="alert-icon">🕒</span>
+                <div class="alert-details">
+                    <h3>Eventos Aguardando Aprovação</h3>
+                    <p>1 evento(s) precisam de sua análise</p>
+                </div>
+            </section>
+
+            <section class="recent-activity-section">
+                <h2>Atividade Recente</h2>
+                <div class="activity-item">
+                    <img src="/JAC - FRONTEND/img/Gemini_Generated_Image_87veij87veij87ve.png" alt="Hackathon" class="activity-thumb">
+                    <div class="activity-details">
+                        <h3>Hackathon</h3>
+                        <p>Departamento de Computação</p>
+                    </div>
+                    <span class="activity-status approved">Aprovado</span>
+                </div>
+                </section>
+
+        </main>
+        
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <a href="index-tela1.html">🏠</a>
+            </div>
+            <div class="nav-item">
+                <a href="eventos.html">📅</a>
+            </div>
+            <div class="nav-item primary-btn">
+                <a href="criar-evento.html">+</a>
+            </div>
+            <div class="nav-item">
+                <a href="gamificacao.html">🏆</a>
+            </div>
+            <div class="nav-item active">
+                <a href="perfil.html">👤</a> 
+                </div>
+        </nav>
+    </div>
+
+</body>
+</html>

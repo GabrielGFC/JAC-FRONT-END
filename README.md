@@ -1,2 +1,0 @@
-# JAC-FRONT-END
-

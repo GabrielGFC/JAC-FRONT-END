@@ -1,0 +1,339 @@
+/* Configurações básicas e fontes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+/* Container que simula a tela do celular */
+.app-container {
+    width: 100%;
+    max-width: 400px; 
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 80px; 
+}
+
+/* 1. HEADER / CABEÇALHO */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile { 
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-profile p { 
+    font-size: 12px;
+    color: #666;
+}
+
+.notification-icon {
+    font-size: 20px;
+}
+
+/* 2. BARRA DE PESQUISA */
+.search-bar {
+    background-color: #eee;
+    padding: 12px 15px;
+    border-radius: 25px;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* 3. CARROSSEL DE BANNERS */
+.carousel-section {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 180px; 
+    border-radius: 15px;
+    background-color: #3f51b5; /* Cor de fundo */
+    /* Você pode substituir esta cor por uma imagem de fundo: 
+    background: url('banner.png') no-repeat center center/cover; */
+    color: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.banner-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5rem 8rem;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.banner-image p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 4px;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* 4. SEÇÃO DE EVENTOS */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.see-all {
+    font-size: 14px;
+    color: #5b5b5b;
+    text-decoration: none;
+}
+
+/* SCROLL HORIZONTAL DE CARDS */
+.event-card-scroll {
+    display: flex;
+    overflow-x: auto; 
+    padding-bottom: 15px; 
+    gap: 15px; /* Espaçamento entre os cards (15px) */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.event-card-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    flex: 0 0 90%; /* Ocupa 90% para mostrar que há mais cards */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    display: flex;
+    gap: 10px; /* CORRIGIDO: Espaçamento entre a imagem e o texto */
+}
+
+.event-thumb {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.card-details h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+.audience-info {
+    font-size: 11px;
+    color: #999;
+    float: right;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.metadata {
+    font-size: 8px;
+    color: #999;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos de Tag e Botão */
+.tag {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.tag-academico {
+    background-color: #e0eaff;
+    color: #5a75fd;
+}
+.tag-extensao {
+    background-color: #e0ffe0; 
+    color: #008000;
+}
+
+.btn-subscribe {
+    background-color: #7F73EB; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 5. SEÇÃO DE CATEGORIAS */
+.categories-section {
+    margin-top: 20px;
+}
+
+.category-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.category-list::-webkit-scrollbar {
+    display: none; 
+}
+
+.category-item {
+    flex-shrink: 0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category-item.active {
+    background-color: #d1ff00; /* Verde limão */
+    border-color: #d1ff00;
+    color: #333;
+}
+
+/* 6. BARRA DE NAVEGAÇÃO INFERIOR FIXA */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px; /* Suspende 20px acima da borda inferior da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza */
+    
+    /* Largura e formato da caixa branca suspensa */
+    width: 90%; /* Usa 90% da largura do .app-container */
+    max-width: 360px; /* Limita para não ficar muito larga */
+    height: 65px; 
+    
+    background-color: white;
+    border-radius: 40px; /* Altamente arredondado em todas as bordas */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Sombra mais visível para flutuar */
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 0 10px; /* Padding interno leve */
+    z-index: 10;
+}
+
+.nav-item {
+    font-size: 24px;
+    color: #333; /* Cor dos ícones inativos mais escura */
+    cursor: pointer;
+    padding: 8px; /* Espaçamento para clique */
+    transition: color 0.3s;
+}
+
+.nav-item.active {
+    background-color: #d1ff00; /* Verde limão */
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-btn {
+    font-size: 30px;
+    background-color: #5a75fd; 
+    color: white;
+    width: 50px; /* Um pouco menor, já que não precisa mais de offset */
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(90, 117, 253, 0.4);
+    /* Removemos o `transform: translateY(-10px);` pois ele não é necessário aqui. */
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}

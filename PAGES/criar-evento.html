@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Evento</title>
+    <link rel="stylesheet" href="/JAC - FRONTEND/styles/criar-styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="header">
+            <div class="user-profile">
+                <img src="/JAC - FRONTEND/img/9c9f5b0d39c014d41be7dc3bed53cbea.jpg" alt="Foto do Usuário" class="avatar">
+                <div>
+                    <h1>Olá, Gabriel!</h1>
+                    <p>Anápolis, Goiás</p>
+                </div>
+            </div>
+            <div class="notification-icon">🔔</div>
+        </header>
+
+        <div class="form-header-title">
+            <span class="back-arrow">
+                <a href="index-tela1.html">&#8592;</a>
+            </span> 
+            <h2>Criar Evento</h2>
+        </div>
+        
+        <main class="form-main-content">
+            <h3>Informações do Evento</h3>
+            
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label>Foto de Capa</label>
+                    <div class="image-upload-area">
+                        <span class="upload-icon">🖼️</span>
+                        <p>Toque para adicionar imagens</p>
+                        <input type="file" name="capa" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Título do Evento*</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição do Evento*</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group half-width">
+                        <label for="data">Data do Evento*</label>
+                        <input type="date" id="data" name="data" required>
+                        <span class="input-icon">📅</span>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="hora">Hora do Evento*</label>
+                        <input type="time" id="hora" name="hora" required>
+                        <span class="input-icon">🕒</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="local">Local*</label>
+                    <input type="text" id="local" name="local" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoria*</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecione a Categoria</option>
+                        <option value="academico">Acadêmico</option>
+                        <option value="extensao">Extensão</option>
+                        <option value="cultural">Cultural</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Criar</button>
+
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

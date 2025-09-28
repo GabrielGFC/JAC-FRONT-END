@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Admin</title>
+    <link rel="stylesheet" href="/JAC - FRONTEND/styles/analytics.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="header">
+            <div class="user-profile">
+                <span class="back-arrow" onclick="history.back()">←</span> 
+            </div>
+            <div class="notification-icon">🔔</div>
+        </header>
+
+        <main class="admin-analytics-main">
+            
+            <div class="admin-tab-navigation">
+                <button class="admin-tab-button" onclick="window.location.href='admin.html'">Visão Geral</button>
+                <button class="admin-tab-button" onclick="window.location.href='perfil-evento.html'">Eventos</button>
+                <button class="admin-tab-button active">Analytics</button>
+            </div>
+
+            <section class="analytics-chart-card">
+                <h2>Engajamento Mensal</h2>
+                <div class="chart-container">
+                    <img src="/JAC - FRONTEND/img/download (5).jpg" alt="Gráfico de Engajamento Mensal" class="placeholder-chart">
+                </div>
+            </section>
+
+            <section class="analytics-summary-grid">
+                <div class="summary-card">
+                    <span class="summary-icon">🏆</span>
+                    <p class="summary-value">1250</p>
+                    <p class="summary-label">Pontos Distribuídos</p>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-icon">🎁</span>
+                    <p class="summary-value">350</p>
+                    <p class="summary-label">Recompensas Resgatadas</p>
+                </div>
+            </section>
+
+        </main>
+        
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <a href="index-tela1.html">🏠</a>
+            </div>
+            <div class="nav-item">
+                <a href="eventos.html">📅</a>
+            </div>
+            <div class="nav-item primary-btn">
+                <a href="criar-evento.html">+</a>
+            </div>
+            <div class="nav-item">
+                <a href="gamificacao.html">🏆</a>
+            </div>
+            <div class="nav-item active">
+                <a href="perfil.html">👤</a> 
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>
